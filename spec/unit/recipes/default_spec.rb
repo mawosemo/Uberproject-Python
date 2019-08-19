@@ -19,12 +19,10 @@ describe 'Python::default' do
     it 'should install python'do
       expect(chef_run).to install_package "python"
     end
-    it 'should enable python'do
-      expect(chef_run).to enable_service "python"
+    it 'should install python-pip'do
+      expect(chef_run).to install_package "python-pip"
     end
-    it 'should be start python'do
-      expect(chef_run).to start_service "python"
-    end
+
 
 
 
