@@ -9,3 +9,6 @@ end
 package 'python-pip' do
   action :install
 end
+apt_update 'update_sources' do
+    action :update
+end
